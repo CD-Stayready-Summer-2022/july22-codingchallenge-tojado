@@ -11,7 +11,7 @@ public class SolutionTest {
         Integer number = 4;
         Integer[] possibleFamilyMembers = new Integer[]{3,2,1,6,8,4};
         Integer[] expected = new Integer[]{1,2,3,4};
-        Integer[]  actual = solution.numberFamily(number, possibleFamilyMembers);
+        Integer[]  actual = solution.numberFamily(number, possibleFamilyMembers).toArray(new Integer[0]);
         Assertions.assertArrayEquals(expected,actual);
     }
 
@@ -21,7 +21,7 @@ public class SolutionTest {
         Integer number = 8;
         Integer[] possibleFamilyMembers = new Integer[]{3,7,10,6,8,9,2,1};
         Integer[] expected = new Integer[]{6,7,8,9,10};
-        Integer[]  actual = solution.numberFamily(number, possibleFamilyMembers);
+        Integer[]  actual = solution.numberFamily(number, possibleFamilyMembers).toArray(new Integer[0]);
         Assertions.assertArrayEquals(expected,actual);
     }
 
